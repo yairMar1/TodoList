@@ -1,8 +1,15 @@
 .header {
-    background-color: #3e1d99;
+    background-color: white;
     padding: 10px;
     justify-content: space-between;
     border: red 2px solid;
     width: 67%;
     display: flex;
+}
+
+.modeButton img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    cursor: pointer;
 }

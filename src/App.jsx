@@ -1,20 +1,22 @@
-import { useState } from 'react'
 import './App.css'
+import { useState } from 'react'
 import Header from './components/Header'
 import Todo from './components/Todo'
 import TodoList from './components/TodoList'
 import Footer from './components/Footer'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [mode, setMode] = useState('lightMode')
 
   return (
     <>
-      <div className="app">
-        <Header />
-        <Todo />
-        <TodoList />
-        <Footer />
+      <div className={`app ${mode}`}>
+        <div className="container">
+          <Header mode={mode} setMode={setMode} />
+          <Todo />
+          <TodoList />
+          <Footer />
+        </div>
       </div>
     </>
   )

@@ -1,11 +1,8 @@
 import './Header.css'
-import { useState } from 'react'
 import sun from '../../public/images/sun.png'
 import moon from '../../public/images/moon.png'
 
-function Header() {
-    const [mode, setMode] = useState('lightMode')
-
+function Header({ mode, setMode }) {
     function handleClick() {
         setMode(mode === 'lightMode' ? 'darkMode' : 'lightMode')
     }
@@ -13,13 +10,11 @@ function Header() {
     return (
         <div className="header">
             <div className="headerTitle">
-                Todo List {mode}
+                Todo List
             </div>
             <div className="modeButton">
-                <button onClick={handleClick}>
-                    <img src={mode === 'lightMode' ? sun : moon}
-                        alt="ImageModeIcon" />
-                </button>
+                <img onClick={handleClick} src={mode === 'lightMode' ? sun : moon}
+                    alt="ImageModeIcon" />
             </div>
         </div>
     )
