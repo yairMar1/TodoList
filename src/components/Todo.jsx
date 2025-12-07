@@ -1,11 +1,12 @@
 import './Todo.css'
 import { useState } from 'react'
-function Todo() {
+
+function Todo({ addTodo }) {
     const [todo, setTodo] = useState('')
 
     function oneClickAdd() {
         if (todo !== '') {
-            console.log("oneClickAdd", todo)
+            addTodo(todo)
         }
         setTodo('')
     }

@@ -5,4 +5,46 @@
     border: red 2px solid;
     width: 67%;
     margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.todo-title {
+    margin-left: 10px;
+    color: white;
+    font-size: large;
+}
+
+.todo-checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    border: 2px solid #333;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.todo-checkbox:checked {
+    background-color: #333;
+}
+
+.todo-checkbox:checked::after {
+    content: '✔';
+    color: white;
+    font-size: 14px;
 }
