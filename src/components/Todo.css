@@ -2,7 +2,8 @@
     background-color: #3e1d99;
     padding: 10px;
     text-align: center;
-    border: red 2px solid;
+    /* border: red 2px solid; */
+    border-radius: 10px;
     justify-content: space-between;
     display: flex;
     width: 67%;
@@ -10,14 +11,14 @@
 }
 
 #btnAdd {
-    background-color: #c9d21d;
+    background-color: #4f398b;
     cursor: pointer;
     border: solid;
     border-radius: 5px;
 }
 
 #btnAdd:hover {
-    background-color: #e9f50b;
+    background-color: white;
 }
 
 input {

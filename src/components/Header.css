@@ -2,7 +2,9 @@
     background-color: white;
     padding: 10px;
     justify-content: space-between;
-    border: red 2px solid;
+    /* border: red 2px solid; */
+    border-radius: 20px;
+    border: 2px solid #3e1d99;
     width: 67%;
     display: flex;
 }
