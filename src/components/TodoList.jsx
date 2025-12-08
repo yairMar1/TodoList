@@ -11,7 +11,9 @@ function TodoList({ todos, toggleTodo, deleteTodo }) {
                         onChange={() => toggleTodo(todo.id)}
                         className="todo-checkbox"
                     />
-                    <span className="todo-title">{todo.title}</span>
+                    <span className="todo-title">
+                        {todo.completed ? <del>{todo.title}</del> : todo.title}
+                    </span>
                     <div id="x" onClick={() => deleteTodo(todo.id)}>❌</div>
                 </div>
             ))}
