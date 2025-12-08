@@ -8,6 +8,7 @@ import data from './components/data.json'
 
 function App() {
   const [mode, setMode] = useState('lightMode')
+  const [filter, setFilter] = useState('all')
   const [todos, setTodos] = useState(() => {
     const savedTodos = localStorage.getItem('todos')
     if (savedTodos) {
@@ -39,9 +40,6 @@ function App() {
     ))
   }
 
-  const [filter, setFilter] = useState('all')
-
-
   const filteredTodos = todos.filter(todo => {
     if (filter === 'active') return !todo.completed
     if (filter === 'completed') return todo.completed
@@ -55,10 +53,7 @@ function App() {
           <Header mode={mode} setMode={setMode} />
           <Todo addTodo={addTodo} />
           <TodoList todos={filteredTodos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
-          <Footer
-            setFilter={setFilter}
-            activeFilter={filter}
-          />
+          <Footer setFilter={setFilter} filter={filter} />
         </div>
       </div>
     </>

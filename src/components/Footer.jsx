@@ -1,23 +1,23 @@
 import './Footer.css'
 
-function Footer({ setFilter, activeFilter }) {
+function Footer({ setFilter, filter }) {
 
     return (
         <div className="footer">
             <div
-                className={`footer-item ${activeFilter === 'all' ? 'marked' : ''}`}
+                className={`footer-item ${filter === 'all' ? 'marked' : ''}`}
                 onClick={() => setFilter('all')}
             >
                 All
             </div>
             <div
-                className={`footer-item ${activeFilter === 'active' ? 'marked' : ''}`}
+                className={`footer-item ${filter === 'active' ? 'marked' : ''}`}
                 onClick={() => setFilter('active')}
             >
                 Active
             </div>
             <div
-                className={`footer-item ${activeFilter === 'completed' ? 'marked' : ''}`}
+                className={`footer-item ${filter === 'completed' ? 'marked' : ''}`}
                 onClick={() => setFilter('completed')}
             >
                 Completed
