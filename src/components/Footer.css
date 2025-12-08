@@ -1,7 +1,8 @@
 .footer {
-    background-color: #3e1d99;
-    padding: 10px;
-    margin-top: 10px;
+    background-color: var(--primary-color);
+    padding: 8px;
+    border: #ffffff 2px solid;
+    margin-top: 8px;
     text-align: center;
     /* border: red 2px solid; */
     border-radius: 10px;
@@ -9,8 +10,9 @@
     display: flex;
     justify-content: space-between;
     color: white;
+    font-family: 'Open Sans', sans-serif;
     position: relative;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 
 .copyright {
@@ -26,10 +28,11 @@
 }
 
 .footer-item.marked {
-    font-weight: bold;
-    color: #ffd700;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    color: #ffffff;
 }
 
 .footer-item.marked:hover {
-    color: #173bbf;
+    color: #ffd000;
 }

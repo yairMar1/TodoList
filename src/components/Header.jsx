@@ -1,6 +1,6 @@
 import './Header.css'
-import sun from '../../public/images/sun.png'
-import moon from '../../public/images/moon.png'
+import sun from '../../public/images/sun1.png'
+import moon from '../../public/images/moon1.png'
 
 function Header({ mode, setMode }) {
     function handleClick() {

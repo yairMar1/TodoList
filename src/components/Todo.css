@@ -1,6 +1,7 @@
 .todo {
-    background-color: #3e1d99;
+    background-color: var(--primary-color);
     padding: 10px;
+    border: #ffffff 2px solid;
     text-align: center;
     /* border: red 2px solid; */
     border-radius: 10px;
@@ -11,16 +12,22 @@
 }
 
 #btnAdd {
-    background-color: #4f398b;
+    background-color: #ffffff;
     cursor: pointer;
-    border: solid;
-    border-radius: 5px;
+    border: solid rgb(255, 255, 255) 2px;
+    border-radius: 8px;
 }
 
 #btnAdd:hover {
-    background-color: white;
+    background-color: var(--primary-color);
+    -webkit-text-fill-color: white
 }
 
 input {
-    width: 50%
+    width: 40%;
+    padding: 5px;
+    border-radius: 8px;
+    border: solid rgb(168, 168, 168) 2px;
+    text-transform: capitalize;
+    color: #64748B;
 }
