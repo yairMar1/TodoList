@@ -5,7 +5,6 @@
     background-color: var(--primary-color);
     padding: 15px;
     justify-content: space-between;
-    /* border: red 2px solid; */
     border-radius: 20px;
     border: 2px solid #ffffff;
     width: 67%;
@@ -26,5 +25,5 @@
     font-weight: 700;
     font-weight: bold;
     text-align: center;
-    color: #ffffff;
+    color: var(--textList-color);
 }

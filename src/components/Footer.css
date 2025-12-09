@@ -4,12 +4,11 @@
     border: #ffffff 2px solid;
     margin-top: 8px;
     text-align: center;
-    /* border: red 2px solid; */
     border-radius: 10px;
     width: 67%;
     display: flex;
     justify-content: space-between;
-    color: white;
+    color: var(--textList-color);
     font-family: 'Open Sans', sans-serif;
     position: relative;
     padding-bottom: 15px;
@@ -30,7 +29,8 @@
 .footer-item.marked {
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
-    color: #ffffff;
+    color: rgb(100, 100, 100);
+
 }
 
 .footer-item.marked:hover {

@@ -50,7 +50,7 @@
 
 .todo-checkbox:checked::after {
     content: '✔';
-    color: var(--primary-color);
+    --textList-color: rgb(133, 133, 133);
     font-size: 14px;
 }
 

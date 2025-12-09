@@ -1,20 +1,22 @@
-# Todo List App — React + Vite
+# TodoList App — React + Vite
 
 A simple and clean Todo List application built using **React** with **Vite** as the development environment.  
 The goal of the project is to practice React fundamentals such as component structure, state management, props, and dynamic rendering.
 
 ---
 
-## 🖼️ Preview (Coming Soon)
-
-> A screenshot of the app will be added here once the UI is finalized.
-
+## 🖼️ Preview
+LightMode:
+![TodoList-lightMode](./public/images/lightMode.png)
+DarkMode:
+![TodoList-darkMode](./public/images/darkMode.png)
 ---
 
 ## ✨ Features
 
 - Add new tasks
 - Mark tasks as completed / uncompleted
+- Edit tasks
 - Delete tasks
 - Filter tasks by:
   - **All**
@@ -25,6 +27,26 @@ The goal of the project is to practice React fundamentals such as component stru
 - Footer with filtering functionality and copyright
 
 ---
+## 💾 Local Storage Persistence
+All todos are automatically saved in your browser using the localStorage API.
+Even if you refresh or close the tab, your tasks remain stored locally on your device(you can delete them from the local storage).
+
+To view the stored data manually:
+
+1. Open Developer Tools (Right-click → Inspect)
+
+2. Go to the Application tab
+
+3. Expand Local Storage
+
+4. Select your site’s URL
+
+5. Look for the key named "todos"
+
+
+Example view:
+![TodoList-localStorage](./public/images/localStorage.png)
+
 
 ## 🧱 Tech Stack
 

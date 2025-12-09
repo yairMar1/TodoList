@@ -10,7 +10,7 @@ function Header({ mode, setMode }) {
     return (
         <div className="header">
             <div className="headerTitle">
-                Todo List
+                TodoList
             </div>
             <div className="modeButton">
                 <img onClick={handleClick} src={mode === 'lightMode' ? sun : moon}
